@@ -1,0 +1,4 @@
+cost = float(input("Enter your cost: "))
+payment = float(input("Enter how much you paid: "))
+
+print("Your change is: ", payment - cost)
