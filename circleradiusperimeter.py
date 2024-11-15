@@ -16,3 +16,4 @@ c1 = circle(radius)
 
 print(f"The radius of the circle is: {c1.area():.2f}")
 print(f"The perimeter of the circle is: {c1.perimeter():.2f}")
+

@@ -52,26 +52,48 @@ animals2 = [Lion(), Penguin(), Frog()]
 for animal in animals2:
     print(f"The {animal.__class__.__name__} lives in {animal.habitat()}.")
 
+# Base class
+
 class Transportation:
+
     def travel_speed(self):
+
         pass
 
-class Car(Transportation):
-    def travel_speed(self):
-        return "The car travels at 100 km/h"
-    
-class Airplane(Transportation):
-    def travel_speed(self):
-        return "The airplane travels at 800 km/h"
-    
-class Bicycle(Transportation):
-    def travel_speed(self):
-        return "The car travels at 15 km/h"
-    
-transportmodes = [Car(), Bicycle(), Airplane()]
+# Subclass for Car
 
-for mode in transportmodes:
-    print(mode.travel_speed)
+class Car(Transportation):
+
+    def travel_speed(self):
+
+        return "The car travels at 100 km/h."
+
+# Subclass for Bicycle
+
+class Bicycle(Transportation):
+
+    def travel_speed(self):
+
+            return "The bicycle travels at 15 km/h."
+
+# Subclass for Airplane
+
+class Airplane(Transportation):
+
+    def travel_speed(self):
+
+        return "The airplane travels at 800 km/h."
+
+# List of transportation modes
+
+transport_modes = [Car(), Bicycle(), Airplane()]
+
+# Displaying the travel speeds for each transportation mode
+
+for mode in transport_modes:
+
+    print(mode.travel_speed())
+
 
 class PaymentMethod:
     def processpayment(self, amount):
